@@ -1,2 +1,6 @@
 <h1>Projects#show</h1>
 <p>Find me in app/views/projects/show.html.erb</p>
+
+Total project square footage: <%= @project.net_area %> <br />
+Total drywall sheets needed: <%= @project.total_sheets_needed %> <br /> 
+Total material cost: $<%= @project.total_material_cost %> 
