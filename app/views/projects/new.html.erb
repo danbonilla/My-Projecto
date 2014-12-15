@@ -4,7 +4,7 @@
   <div class="row">
     <div id="main" class="small-12 large-centered columns">
       <h1>Projects#new</h1>
-      <%= form_for :project do |f| %>
+      <%= form_for @project, url: {action: "create"} do |f| %>
         Wall height: <%= f.number_field :wall_height %><br />
         Wall perimiter : <%= f.number_field :wall_perimiter %><br />
         Area to exclude height : <%= f.number_field :area_to_exclude_height %><br />
@@ -14,19 +14,8 @@
         Sheet cost : <%= f.number_field :sheet_cost %><br />
         <%= f.submit %>
       <% end %>
-
     </div>  
   </div>
 </div>
 
-<%= form_for @project, url: {action: "create"} do |f| %>
-  Wall height: <%= f.number_field :wall_height %><br />
-  Wall perimiter : <%= f.number_field :wall_perimiter %><br />
-  Area to exclude height : <%= f.number_field :area_to_exclude_height %><br />
-  Area to exclude length : <%= f.number_field :area_to_exclude_perimiter %><br />
-  Sheet height : <%= f.number_field :sheet_height %><br />
-  Sheet length : <%= f.number_field :sheet_width %><br />
-  Sheet cost : <%= f.number_field :sheet_cost %><br />
-  <%= f.submit %>
-<% end %>
 
