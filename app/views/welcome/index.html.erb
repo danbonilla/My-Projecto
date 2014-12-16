@@ -3,14 +3,12 @@
 <div class="container">
  <div class="row">
     <div id="main" class="small-12 large-centered columns">
-      <h1>Welcome to My Projecto</h1>
-      <p>Please select language | Por favor escoja lenguaje</p>
-      <form method="get" action="/projects/new" class="button_to">
-        <div><input value="English" type="submit" /></div>
-      </form>
-      <form method="get" action="/projects/new" class="button_to">
-        <div><input value="Español" type="submit" /></div>
-      </form>
+      <h1>My Projecto</h1>
+      <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Select Language  |  Escoja Lenguaje</button><br>
+      <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+        <li><a href="/projects/new">ENGLISH</a></li>
+        <li><a href="/projects/new">ESPAÑOL</a></li>
+      </ul>
     </div>  
   </div>
 </div>
