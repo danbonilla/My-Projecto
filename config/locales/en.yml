@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+
+  area_to_exclude_height: Area to Exclude (height)
+
