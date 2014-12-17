@@ -36,8 +36,13 @@ en:
         sheet_cost: 'Price per sheet of drywall $'
     placeholders:
       project:
-        wall_height: 'total height of walls in feet   (i.e.  8)'
-        wall_perimiter: 'total length of all walls in feet   (i.e  40)'
-        area_to_exclude_height: 'height in feet   (i.e.  5)'
-        area_to_exclude_perimiter: 'width in feet   (i.e.  3)'
-        sheet_cost: 'drywall sheet price   (i.e.  9.98)'
+        wall_height: 'height of walls in feet  (i.e.  8)'
+        wall_perimiter: 'total length of walls in feet  (i.e  32)'
+        area_to_exclude_height: 'height in feet  (i.e.  3)'
+        area_to_exclude_perimiter: 'width in feet  (i.e.  4)'
+        sheet_cost: 'drywall sheet price  (i.e.  9.98)'
+
+  results_table_caption: 'Project results'
+  results_total_sqft: 'Total square feet'
+  results_total_drywall: 'Drywall sheets needed'
+  results_total_material_cost: 'Total material cost'

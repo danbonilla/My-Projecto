@@ -1,6 +1,24 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
-
-Total project square footage: <%= @project.net_area %> <br />
-Total drywall sheets needed: <%= @project.total_sheets_needed %> <br /> 
-Total material cost: $<%= @project.total_material_cost %> 
+<h1 class="main_title">Projecto</h1>
+<div class="container">
+  <div class="row">
+    <div id="main" class="small-7 large-centered columns">
+        <table>
+          <caption><%= t('results_table_caption') %></caption>
+          <thead>
+            <tr>
+              <th><%= t('results_total_sqft') %></th>
+              <th><%= t('results_total_drywall') %></th>
+              <th><%= t('results_total_meterial_cost') %></th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td><%= @project.net_area %></td>
+            <td><%= @project.total_sheets_needed %></td>
+            <td>$<%= @project.total_material_cost %></td>
+          </tr>
+        </tbody>
+        </table>
+    </div>  
+  </div>
+</div>

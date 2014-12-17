@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
 
   def wall_area
+    return 0 if self.wall_height == nil || self.wall_perimiter == nil
     self.wall_height * self.wall_perimiter
   end
 

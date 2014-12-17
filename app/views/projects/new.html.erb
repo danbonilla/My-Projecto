@@ -1,8 +1,7 @@
-
+<h1 class="main_title">Projecto</h1>
 <div class="container">
   <div class="row">
-    <div id="main" class="small-6 large-centered columns">
-      <h1>Projects#new</h1>
+    <div id="main" class="small-4 columns">
       <%= simple_form_for @project do |f| %>
         <%= f.input :wall_height %>
         <%= f.input :wall_perimiter %>
@@ -14,6 +13,10 @@
         <%= f.input :sheet_cost %>
         <%= f.button :submit%>
       <% end %>
-    </div>  
+    </div>
+    <div id="main" class="small-8 columns"> 
+      <%= image_tag "dimensions.jpg", :class => 'dimensions'%> 
+    </div>
   </div>
 </div>
+
