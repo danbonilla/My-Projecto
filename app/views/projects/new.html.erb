@@ -1,23 +1,19 @@
 
-
 <div class="container">
   <div class="row">
-    <div id="main" class="small-12 large-centered columns">
+    <div id="main" class="small-6 large-centered columns">
       <h1>Projects#new</h1>
-      <%= form_for @project, url: {action: "create"} do |f| %>
-       <%= t('hello') %> <%= f.number_field :wall_height %><br />
-        Wall perimiter : <%= f.number_field :wall_perimiter %><br />
-        <!-- Simple Form syntax.  Gives you label, input, and in-line errors -->
-        <!-- f.input :area_to_exclude_height -->
-        Area to exclude height : <%= f.number_field :area_to_exclude_height %><br />
-        Area to exclude length : <%= f.number_field :area_to_exclude_perimiter %><br />
-        Sheet height : <%= f.number_field :sheet_height %><br />
-        Sheet length : <%= f.number_field :sheet_width %><br />
-        Sheet cost : <%= f.number_field :sheet_cost %><br />
-        <%= f.submit %>
+      <%= simple_form_for @project do |f| %>
+        <%= f.input :wall_height %>
+        <%= f.input :wall_perimiter %>
+        <%= f.input :area_to_exclude_height, required: false %>
+        <%= f.input :area_to_exclude_perimiter, required: false %>
+        <%= f.input :sheet_width,
+          collection: [4] %>
+        <%= f.input :sheet_height, collection: [8, 10, 12]%>
+        <%= f.input :sheet_cost %>
+        <%= f.button :submit%>
       <% end %>
     </div>  
   </div>
 </div>
-
-
