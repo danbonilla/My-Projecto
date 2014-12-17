@@ -19,7 +19,27 @@ class Project < ActiveRecord::Base
   end
 
   def total_sheets_needed
-    self.sheets_needed = (net_area/sheet_size)
+    if (net_area/sheet_size) < 1
+      return 1
+    else
+      self.sheets_needed = (net_area/sheet_size)
+    end
+  end
+
+  def sanitize_input
+    self.sheet_cost = self.sheet_cost.tr('$', ' ').to_f
+    # return value
+  end
+
+  def total_material_cost
+    self.material_cost = (total_sheets_needed * self.sheet_cost)
+  end
+
+  def calculate_everything
+    # sanitize_input
+    net_area
+    total_sheets_needed
+    total_material_cost
   end
 
   # def sanitize_input
@@ -39,17 +59,9 @@ class Project < ActiveRecord::Base
   #   write_attribute(:sanitize_input, value)
   # end
 
-  # def sanitize_input
-  #   value = self.sheet_cost
-  #   value.to_s.tr('$', '').to_f
-  #   # return value
-  # end
 
   ## need to round up results also...
 
-  def total_material_cost
-    self.material_cost = (total_sheets_needed * self.sheet_cost)
-  end
 
 
 
