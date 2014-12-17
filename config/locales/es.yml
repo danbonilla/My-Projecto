@@ -1,2 +1,22 @@
-es: 
-  hello: "hola mundo"
+es:
+  helpers:
+    submit:
+      project:
+        create: 'Calcular su proyecto'
+  simple_form:
+    labels:
+      project:
+        wall_height: 'Altura de pared'
+        wall_perimiter: 'Perímetro de pared'
+        area_to_exclude_height: 'Altura de sección para excluir'
+        area_to_exclude_perimiter: 'Anchura de sección para excluir'
+        sheet_width: 'Escoja anchura de la hoja de yeso (drywall)'
+        sheet_height: 'Escoja lo largo de la hoja de yeso (drywall)'
+        sheet_cost: 'Precio por hoja de yeso (drywall) $'
+    placeholders:
+      project:
+        wall_height: 'altura de las paredes medidas en pies  (e.g.  8)'
+        wall_perimiter: 'total de lo largo de las paredes medidas en pies   (e.g.  40)'
+        area_to_exclude_height: 'altura medida en pies   (e.g.  5)'
+        area_to_exclude_perimiter: 'anchura medida en pies   (e.g.  3)'
+        sheet_cost: 'precio por hoja de yeso (drywall)   (e.g.  9.98)'

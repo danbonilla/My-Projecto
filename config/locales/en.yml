@@ -20,7 +20,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
-
-  area_to_exclude_height: Area to Exclude (height)
-
+  helpers:
+    submit:
+      project:
+        create: 'Calculate project'
+  simple_form:
+    labels:
+      project:
+        wall_height: 'Wall height'
+        wall_perimiter: 'Wall perimiter'
+        area_to_exclude_height: 'Height of section to exclude'
+        area_to_exclude_perimiter: 'Width of section to exclude'
+        sheet_width: 'Select drywall sheet width'
+        sheet_height: 'Select drywall sheet length'
+        sheet_cost: 'Price per sheet of drywall $'
+    placeholders:
+      project:
+        wall_height: 'total height of walls in feet   (i.e.  8)'
+        wall_perimiter: 'total length of all walls in feet   (i.e  40)'
+        area_to_exclude_height: 'height in feet   (i.e.  5)'
+        area_to_exclude_perimiter: 'width in feet   (i.e.  3)'
+        sheet_cost: 'drywall sheet price   (i.e.  9.98)'

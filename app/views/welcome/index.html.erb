@@ -6,7 +6,7 @@
       <h1>My Projecto</h1>
       <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Select Language  |  Escoja Lenguaje</button><br>
       <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
-        <% supported_languages = {'English' => 'en', 'ESPAÑOL' => 'es'} %>
+        <% supported_languages = {'English' => 'en', 'Español' => 'es'} %>
         <% supported_languages.each do |language, language_code| %>
           <li><%= link_to(language, new_project_path(locale: language_code)) %></li>
         <% end %>
@@ -16,4 +16,3 @@
 </div>
 
 
-<%= t('hello') %>

@@ -5,6 +5,7 @@ class Project < ActiveRecord::Base
   end
 
   def excluded_area
+    return 0 if self.area_to_exclude_height == nil || self.area_to_exclude_perimiter == nil
     self.area_to_exclude_height * self.area_to_exclude_perimiter
   end
 
