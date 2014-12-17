@@ -21,10 +21,35 @@ class Project < ActiveRecord::Base
     self.sheets_needed = (net_area/sheet_size)
   end
 
+  # def sanitize_input
+  #   sheet_price = self.sheet_cost
+  #   sheet_price.delete('$').to_f
+  # end
+
+
+  # def amount_due=(value)
+  #   value = value.to_s.tr('$', '').to_f
+  #   write_attribute(:amount_due, value)
+  # end
+
+  # def sanitize_input=(value)
+  #   value = self.sheet_cost
+  #   value = value.to_s.tr('$', '').to_f
+  #   write_attribute(:sanitize_input, value)
+  # end
+
+  # def sanitize_input
+  #   value = self.sheet_cost
+  #   value.to_s.tr('$', '').to_f
+  #   # return value
+  # end
+
+  ## need to round up results also...
 
   def total_material_cost
     self.material_cost = (total_sheets_needed * self.sheet_cost)
   end
 
-end
 
+
+end
