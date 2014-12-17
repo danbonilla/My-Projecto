@@ -20,6 +20,17 @@
   text-align: center;
  }
 
+.main_title {
+  text-align: center;
+}
 .drop1 ul { 
   text-align: center;
+}
+
+table {
+  text-align: center;
+}
+
+.dimensions {
+  padding-top: 50px;
 }

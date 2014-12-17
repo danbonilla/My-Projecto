@@ -15,8 +15,13 @@ es:
         sheet_cost: 'Precio por hoja de yeso (drywall) $'
     placeholders:
       project:
-        wall_height: 'altura de las paredes medidas en pies  (e.g.  8)'
-        wall_perimiter: 'total de lo largo de las paredes medidas en pies   (e.g.  40)'
-        area_to_exclude_height: 'altura medida en pies   (e.g.  5)'
-        area_to_exclude_perimiter: 'anchura medida en pies   (e.g.  3)'
-        sheet_cost: 'precio por hoja de yeso (drywall)   (e.g.  9.98)'
+        wall_height: 'altura de pared en pies  (e.g.  8)'
+        wall_perimiter: 'total de largo de paredes en pies  (e.g.  32)'
+        area_to_exclude_height: 'altura medida en pies  (e.g.  3)'
+        area_to_exclude_perimiter: 'anchura medida en pies  (e.g.  4)'
+        sheet_cost: 'precio por hoja  (e.g.  9.98)'
+
+  results_table_caption: 'Resultados del proyecto'
+  results_total_sqft: 'Total de pies cuadrados'
+  results_total_drywall: 'Hojas de yeso (drywall) necesitadas'
+  results_total_material_cost: 'Precio total de materiales'
