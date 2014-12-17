@@ -18,6 +18,7 @@ class Project < ActiveRecord::Base
     self.sheet_width * self.sheet_height
   end
 
+  # cheating the system with method below, will need to refacor to better deal with decimals and rounding
   def total_sheets_needed
     if (net_area/sheet_size) < 1
       return 1
@@ -26,10 +27,11 @@ class Project < ActiveRecord::Base
     end
   end
 
-  def sanitize_input
-    self.sheet_cost = self.sheet_cost.tr('$', ' ').to_f
-    # return value
-  end
+  # have to look into simple_form's validation to see how to sanitize input
+  # def sanitize_input
+  #   self.sheet_cost = self.sheet_cost.tr('$', ' ').to_f
+  #   # return value
+  # end
 
   def total_material_cost
     self.material_cost = (total_sheets_needed * self.sheet_cost)
@@ -42,27 +44,5 @@ class Project < ActiveRecord::Base
     total_material_cost
   end
 
-  # def sanitize_input
-  #   sheet_price = self.sheet_cost
-  #   sheet_price.delete('$').to_f
-  # end
-
-
-  # def amount_due=(value)
-  #   value = value.to_s.tr('$', '').to_f
-  #   write_attribute(:amount_due, value)
-  # end
-
-  # def sanitize_input=(value)
-  #   value = self.sheet_cost
-  #   value = value.to_s.tr('$', '').to_f
-  #   write_attribute(:sanitize_input, value)
-  # end
-
-
   ## need to round up results also...
-
-
-
-
 end
