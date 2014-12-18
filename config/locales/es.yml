@@ -25,3 +25,4 @@ es:
   results_total_sqft: 'Total de pies cuadrados'
   results_total_drywall: 'Hojas de yeso (drywall) necesitadas'
   results_total_material_cost: 'Precio total de materiales'
+  new_project_button: 'Calcular nuevo proyecto'

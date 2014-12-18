@@ -1,8 +1,16 @@
+<header class="full-width header-area">
+    <div class="row">
+        <div class="large-12 columns">
+            <h1>Projecto</h1>
+        </div>
+    </div>
+</header> 
 
-<h1 class="main_title">Projecto</h1>
+
 <div class="container">
  <div class="row">
     <div id="main" class="small-12 large-centered columns">
+      <%= image_tag "Worker.svg", :class => 'worker'%> </br>
       <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Select Language  |  Escoja Lenguaje</button><br>
       <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
         <% supported_languages = {'English' => 'en', 'Español' => 'es'} %>
@@ -12,6 +20,14 @@
       </ul>
     </div>  
   </div>
+</div>
+
+<div class="full-width footer-area">
+    <div class="row">
+        <div class="large-12 columns" id="copyright">
+            &copy; DB 2014
+        </div>
+    </div>
 </div>
 
 

@@ -60,29 +60,70 @@
   font-style: normal;
 }
 
+/*images*/
+
+.dimensions {
+  padding-top: 50px;
+}
 
 
- #main {
+/*top bar and footer*/
+
+.header-area {
+    background-color: #008cba;
+    max-height: 110px;
+}
+
+.header-area a {
+  color: white;
+}
+
+.footer-area {
+  background-color: #008cba;  
+  /*color: #fff;*/
+  min-height: 60px;
+  padding: 20px 0 0 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+body {
+    background-color: #ccc;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'SketchTools';
+  /*font-family: 'JISawblade';*/
+  /*font-family: 'Vector';*/
+  /*font-family: 'Bluprint';*/
+  color: white;
+  font-size: 85px;
+  font-weight: 400;
+}
+
+#main {
   text-align: center;
  }
 
-.main_title {
-  text-align: center;
-  /*font-family: 'SketchTools';*/
-  /*font-family: 'JISawblade';*/
-  /*font-family: 'Vector';*/
-  font-family: 'Bluprint';
-  color: blue;
+.container {
+  padding-top: 20px;
 }
-.drop1 ul { 
-  text-align: center;
+
+.dropdown.button, button.dropdown {
+ /* padding-top: 20px;*/
+  margin-top: 10px;
 }
 
 table {
   text-align: center;
 }
 
-.dimensions {
-  padding-top: 50px;
+#copyright {
+  color: white;
+  text-align: center;
 }
 
