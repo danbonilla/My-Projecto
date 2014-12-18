@@ -1,7 +1,15 @@
-<h1 class="main_title">Projecto</h1>
+<header class="full-width header-area">
+    <div class="row">
+        <div class="large-12 columns">
+            <h1>Projecto</h1>
+        </div>
+    </div>
+</header> 
+
+
 <div class="container">
   <div class="row">
-    <div id="main" class="small-7 large-centered columns">
+    <div id="main" class="small-6 large-centered columns">
         <table>
           <caption><%= t('results_table_caption') %></caption>
           <thead>
@@ -19,6 +27,15 @@
           </tr>
         </tbody>
         </table>
+        <a href="/projects/new" class="button"><%= t('new_project_button') %></a>
     </div>  
   </div>
+</div>
+
+<div class="full-width footer-area">
+    <div class="row">
+        <div class="large-12 columns" id="copyright">
+            &copy; DB 2014
+        </div>
+    </div>
 </div>

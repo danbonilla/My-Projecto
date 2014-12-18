@@ -46,3 +46,4 @@ en:
   results_total_sqft: 'Total square feet'
   results_total_drywall: 'Drywall sheets needed'
   results_total_material_cost: 'Total material cost'
+  new_project_button: 'Calculate new project'
