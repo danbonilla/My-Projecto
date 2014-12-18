@@ -16,12 +16,63 @@
 
  */
 
+ @font-face {
+  font-family: 'SketchTools';
+  src:url('SketchTools.ttf');
+  src:url('SketchTools.eot?#iefix') format('embedded-opentype'),
+    url('SketchTools.svg#SketchTools') format('svg'),
+    url('SketchTools.woff') format('woff'),
+    url('SketchTools.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JISawblade';
+  src:url('JISawblade.ttf');
+  src:url('JISawblade.eot?#iefix') format('embedded-opentype'),
+    url('JISawblade.svg#SketchTools') format('svg'),
+    url('JISawblade.woff') format('woff'),
+    url('JISawblade.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vector';
+  src:url('Vector.ttf');
+  src:url('Vector.eot?#iefix') format('embedded-opentype'),
+    url('Vector.svg#SketchTools') format('svg'),
+    url('Vector.woff') format('woff'),
+    url('Vector.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bluprint';
+  src:url('Bluprint.ttf');
+  src:url('Bluprint.eot?#iefix') format('embedded-opentype'),
+    url('Bluprint.svg#SketchTools') format('svg'),
+    url('Bluprint.woff') format('woff'),
+    url('Bluprint.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
  #main {
   text-align: center;
  }
 
 .main_title {
   text-align: center;
+  /*font-family: 'SketchTools';*/
+  /*font-family: 'JISawblade';*/
+  /*font-family: 'Vector';*/
+  font-family: 'Bluprint';
+  color: blue;
 }
 .drop1 ul { 
   text-align: center;
@@ -34,3 +85,4 @@ table {
 .dimensions {
   padding-top: 50px;
 }
+
