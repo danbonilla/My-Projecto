@@ -13,6 +13,7 @@
       <%= image_tag "Worker.svg", :class => 'worker'%> </br>
       <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Select Language  |  Escoja Lenguaje</button><br>
       <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true" tabindex="-1">
+        <!-- code below assigns the locale: to the corresponding language selection from menu -->
         <% supported_languages = {'English' => 'en', 'Español' => 'es'} %>
         <% supported_languages.each do |language, language_code| %>
           <li><%= link_to(language, new_project_path(locale: language_code)) %></li>
